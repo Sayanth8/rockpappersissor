@@ -1,4 +1,4 @@
-let num = prompt("Enter the number of rounds you want to play (1-5):");
+let num = parseInt(prompt("Enter the number of rounds you want to play (1-5):"));
 function getComputerChoice(){
     let num=Math.random();
     if (num > 0.6){
