@@ -18,6 +18,10 @@ function getHumanChoice(){
 let humenscore=0;
 let computerscore=0;
 function playround(humanchoice,computerchoice){
+    let validChoices = ["rock", "paper", "scissor"];
+    if (!validChoices.includes(humanchoice.toLowerCase())) {
+        return "Invalid choice! Please choose rock, paper, or scissor.";
+    }
     if ( humanchoice.toLowerCase()==="rock" && computerchoice==="scissor"){
         humenscore++;
         return("You win, Rock beats Scissors");
