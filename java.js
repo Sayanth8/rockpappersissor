@@ -56,4 +56,6 @@ if (humenscore > computerscore){
 }
 else if (humenscore < computerscore){
     alert("You lose the game!");
+} else {
+    alert("The game is a draw!");
 }
